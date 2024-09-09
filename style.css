@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #3B4664;
+}
+.con{
+    background-color: #252D44;
+    padding: 45px;
+}
+input{
+    margin-bottom: 30px;
+    padding: 10px;
+    color: midnightblue;
+    width: 212px;
+    font-size: 15px;
+}
+button{
+    margin: 5px;
+    padding:10px;
+    border-radius:5px ;
+    border: 0;
+    background-color: #EAE3DB;
+    width: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button.clearall{
+    width: 94px;
+    background-color: #647298;
+    color: white;
+}
+button.equals{
+    width: 94px;
+    background-color: #D13F30;
+    color: white;
+}
+/* .clear{
+    background-color: #647298;
+    color: white;
+}
+
+
+.equals{
+    background-color: #D13F30;
+}
+.clearall{
+   width: 90px;
+   background-color: #647298;
+  color: white;
+}
+#zero{
+    width: 90px;
+} */

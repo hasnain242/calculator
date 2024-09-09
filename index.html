@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+        <input type="text"  id="inp">
+        <div class="head">
+           <button class="clearall" onclick="clearall()">AC</button>
+           <button class="clear" onclick="clearbtn()">C</button>
+           <button id="divide" value="/" onclick="displayword(divide)">/</button>
+        </div>
+        <div class="head">
+            <button id="seven" value="7" onclick="displayword(seven)">7</button>
+            <button id="eight" value="8" onclick="displayword(eight)">8</button>
+            <button id="nine" value="9"  onclick="displayword(nine)">9</button>
+            <button id="multiply" value="*" onclick="displayword(multiply)">*</button>
+         </div>
+         <div class="head">
+            <button id="four" value="4" onclick="displayword(four)">4</button>
+            <button id="five" value="5" onclick="displayword(five)">5</button>
+            <button id="six" value="6" onclick="displayword(six)">6</button>
+            <button id="minus" value="-" onclick="displayword(minus)">-</button>
+         </div>
+         <div class="head">
+            <button id="one" value="1" onclick="displayword(one)">1</button>
+            <button id="two" value="2" onclick="displayword(two)">2</button>
+            <button id="three" value="3" onclick="displayword(three)">3</button>
+            <button id="plus" value="+" onclick="displayword(plus)">+</button>
+         </div>
+         <div class="head">
+            <button id="zero" value="0" onclick="displayword(zero)">0</button>
+            <button id="dot" value="." onclick="displayword(dot)">.</button>
+            <button class="equals" onclick="equals()">=</button>
+         </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
