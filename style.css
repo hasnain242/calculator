@@ -10,7 +10,8 @@ background-color: #3B4664;
 }
 .con{
     background-color: #252D44;
-    padding: 45px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 input{
     margin-bottom: 30px;
