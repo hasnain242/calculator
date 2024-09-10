@@ -1,10 +1,10 @@
 const input = document.getElementById("inp");
 
+
 function displayword(button) {
   const lastChar = input.value.slice(-1);
 
   const operators = ["+", "-", "*", "/", "."];
-
   if (operators.includes(button.value)) {
     if (operators.includes(lastChar)) {
       input.value = input.value.slice(0, -1) + button.value;
@@ -15,6 +15,7 @@ function displayword(button) {
     input.value += button.value;
   }
 }
+
 function equals() {
   input.value = eval(input.value);
 }
@@ -24,3 +25,7 @@ function clearall() {
 function clearbtn() {
   input.value = input.value.slice(0, -1);
 }
+input.addEventListener('input', function (e) {
+    // Replace any non-numeric characters with an empty string
+    this.value = this.value.replace(/[^\d.]/g, '');
+});
